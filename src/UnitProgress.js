@@ -1,15 +1,9 @@
 import React from 'react';
 import './UnitProgress.css';
 
-class UnitProgress extends React.Component{
-    constructor(props)
-    {
-        super(props);
-        this.state = {progress: this.props.progress};
-    }
+class UnitProgress extends React.Component {
     
-
-    render(){
+    render() {
         return <div className = "unit-box">&nbsp;</div>;
     }
 

@@ -1,10 +1,19 @@
 .progress-bar
 {
-    border: solid 1px #000000;
-    margin: 0px auto;
+    animation: load 2s normal forwards;
 }
 
 .progress-bar > div
 {
     display: inline-block;
+}
+
+@keyframes load 
+{
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+.parent-bar {
+    border: solid 1px #000000;
 }

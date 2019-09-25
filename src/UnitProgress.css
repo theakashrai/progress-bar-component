@@ -1,4 +1,11 @@
 .unit-box {
-    background-color: aqua;
+    background-color: chartreuse;
     width: 1%;
+    animation: boot 2s;
+    
+  }
+
+  @keyframes boot {
+    from {background-color: white;}
+    to {background-color: chartreuse;}
   }

@@ -1,8 +1,7 @@
-import React from 'react';
-// eslint-disable-next-line no-unused-vars
-import UnitProgress from './UnitProgress';
+/* eslint-disable no-unused-vars */
 import './ProgressBar.css';
-
+import React from 'react';
+import UnitProgress from './UnitProgress';
 
 class ProgressBar extends React.Component{
     constructor(props)
@@ -11,7 +10,7 @@ class ProgressBar extends React.Component{
         this.state = {progress: this.props.progress, maxProgress:this.props.max};
     }
     
-    createProgressBar(){
+    createProgressBar() {
         let retEle = [];
         let perCount = (this.state.progress/this.state.maxProgress)*100;
         
@@ -22,9 +21,10 @@ class ProgressBar extends React.Component{
         return retEle;
     }
 
-
-    render(){
-        return <div className = 'progress-bar'>{this.createProgressBar()}</div>;
+    render() {
+        return <div className = 'parent-bar'>
+            <div className = 'progress-bar'>{this.createProgressBar()}</div>
+            </div>;
     }
 
 }
