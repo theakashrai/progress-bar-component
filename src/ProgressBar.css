@@ -1,0 +1,10 @@
+.progress-bar
+{
+    border: solid 1px #000000;
+    margin: 0px auto;
+}
+
+.progress-bar > div
+{
+    display: inline-block;
+}
